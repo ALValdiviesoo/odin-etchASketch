@@ -1,1 +1,1 @@
-# odin-etchASketch
+This is the Etch-A-Sketch project for TOP. This project focuses on JavaScript and DOM manipulation.
