@@ -8,13 +8,15 @@
   <title>Etch-A-Sketch</title>
 </head>
 <body>
+
+  <h1>Etch-A-Sketch</h1>
   
   <div class="flexContainer">
     <div class="leftSection">
-      <button onclick="changeColor('black')">DEFAULT</button>
-      <button onclick="changeColor('gray')">GRAY</button>
-      <button onclick="changeColor('random')">RANDOM</button>
-      <button onclick="resetBoard()">RESET</button>
+      <button onclick="changeColor('black')" class="black">DEFAULT</button>
+      <button onclick="changeColor('gray')" class="gray">GRAY</button>
+      <button onclick="changeColor('random')" class="random">RANDOM</button>
+      <button onclick="resetBoard()" class="reset">RESET</button>
     </div>
 
     <div class="grid"></div>
@@ -22,7 +24,7 @@
     <div class="rightSection">
       <label for="inputSize">SIZE:</label>
       <input type="number" name="gridSize" id="inputSize" value="16" onchange="changeGrid(this.value)">
-      <button>ENTER</button>
+      <button class="submit">ENTER</button>
     </div>
   </div>
 
