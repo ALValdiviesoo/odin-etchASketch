@@ -11,17 +11,17 @@
   
   <div class="flexContainer">
     <div class="leftSection">
-      <button>DEFAULT</button>
-      <button>GRAY</button>
-      <button>RANDOM</button>
-      <button>RESET</button>
+      <button onclick="changeColor('black')">DEFAULT</button>
+      <button onclick="changeColor('gray')">GRAY</button>
+      <button onclick="changeColor('random')">RANDOM</button>
+      <button onclick="resetBoard()">RESET</button>
     </div>
 
     <div class="grid"></div>
 
     <div class="rightSection">
       <label for="inputSize">SIZE:</label>
-      <input type="number" name="gridSize" id="inputSize">
+      <input type="number" name="gridSize" id="inputSize" value="16" onchange="changeGrid(this.value)">
       <button>ENTER</button>
     </div>
   </div>
